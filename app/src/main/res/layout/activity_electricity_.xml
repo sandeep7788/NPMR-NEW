@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+            <include
+                android:id="@+id/toolbar_layout"
+                layout="@layout/toolbar_layout" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/top_cardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp"
+                    android:elevation="9dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginBottom="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/prepaid_and_semilar_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingRight="9dp"
+                        android:layout_marginBottom="9dp"
+                        android:paddingLeft="9dp"
+                        android:layout_marginTop="15dp">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:foregroundGravity="center"
+                            android:layout_marginBottom="10dp">
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/c_blue_dark"
+                                android:text="Electricity Board"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:foregroundGravity="center"
+                                android:layout_marginEnd="4dp"
+                                android:checked="true"/>
+                            <RadioButton
+                                android:clickable="false"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/c_blue_dark"
+                                android:text="Electricity Board"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:foregroundGravity="center"/>
+
+                        </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_marginTop="9dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:foregroundGravity="center"
+                                android:layout_marginLeft="20dp"
+                                android:src="@drawable/select"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2dp"
+                                    android:hint="Select Board"
+                                    app:hintTextColor="@color/c_gray2">
+
+                                    <TextView
+                                        android:id="@+id/txt_board"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|top"
+                                        android:hint="Select Board"
+                                        android:textColorHint="@color/c_gray1"
+                                        android:textSize="@dimen/text"
+                                        android:text=""
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/c_gray2"
+                            android:layout_marginLeft="35dp"/>
+
+                        <LinearLayout
+                            android:visibility="visible"
+                            android:id="@+id/layout_fachBill"
+                            android:layout_marginTop="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:foregroundGravity="center"
+                                android:layout_marginLeft="25dp"
+                                android:src="@drawable/select"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/constant_layout_fachbill"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2dp"
+                                    android:hint="Enter NUmber"
+                                    app:hintTextColor="@color/c_gray2"
+                                    android:orientation="horizontal"
+                                    android:weightSum="3">
+
+                                    <EditText
+                                        android:id="@+id/edt_bill_number"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|top"
+                                        android:layout_margin="2dp"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="@color/white_color"
+                                        android:hint="Number"
+                                        android:inputType="number"
+                                        android:maxLength="20"
+                                        android:textSize="@dimen/text"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <Button
+                                        android:layout_weight="2"
+                                        android:id="@+id/btn_fatchBill"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginEnd="8dp"
+                                        android:padding="2dp"
+                                        android:text="Fetch Bill"
+                                        android:textSize="@dimen/text_small"
+                                        android:layout_marginTop="2dp"
+                                        android:layout_marginBottom="2dp"
+                                        android:paddingLeft="4dp"
+                                        android:paddingRight="2dp"
+                                        android:fontFamily="@font/worksans_medium"
+                                        android:background="@drawable/button_background"
+                                        android:elevation="2dp"
+                                        android:textColor="@color/c_white"
+                                        app:layout_constraintBottom_toBottomOf="@+id/edt_bill_number"
+                                        app:layout_constraintEnd_toEndOf="@+id/edt_bill_number"
+                                        app:layout_constraintHorizontal_bias="1.0"
+                                        app:layout_constraintStart_toStartOf="@+id/edt_bill_number"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:visibility="visible"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/grey"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="25dp">
+
+                            <ImageView
+                                android:id="@+id/img_fachbill"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center"
+                                android:elevation="4dp"
+                                android:padding="4dp"
+                                android:src="@drawable/openedwhitebox"
+                                android:tint="@color/c_blue_dark"
+                                android:visibility="gone"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/txt_invalid"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/linearLayout2" />
+
+                            <TextView
+                                android:id="@+id/txt_invalid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="2dp"
+                                android:foregroundGravity="center"
+                                android:gravity="center"
+                                android:text="Invalid Details"
+                                android:textColor="@color/c_red"
+                                android:visibility="gone"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="@+id/layout_shoew_fach_details"
+                                app:layout_constraintStart_toStartOf="@+id/layout_shoew_fach_details"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <LinearLayout
+                                android:id="@+id/layout_shoew_fach_details"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/grey"
+                                android:orientation="vertical"
+                                android:visibility="gone"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="9dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:foregroundGravity="center"
+                                    android:gravity="center"
+                                    android:text="Consumer Details"
+                                    android:textColor="@color/c_black" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:background="@color/grey"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left|center"
+                                        android:layout_marginTop="9dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/worksans_medium"
+                                        android:foregroundGravity="center"
+                                        android:gravity="left|center"
+                                        android:paddingLeft="4dp"
+                                        android:text="Consumer Name :"
+                                        android:textColor="@color/text_color" />
+
+                                    <TextView
+                                        android:id="@+id/c_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left|center"
+                                        android:layout_marginStart="4dp"
+                                        android:layout_marginTop="9dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/worksans_medium"
+                                        android:foregroundGravity="center|left"
+                                        android:gravity="center|left"
+                                        android:text=""
+                                        android:textColor="@color/text_color" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:background="@color/grey"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left|center"
+                                        android:layout_marginTop="9dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/worksans_medium"
+                                        android:foregroundGravity="center"
+                                        android:gravity="left|center"
+                                        android:paddingLeft="4dp"
+                                        android:text="Bill Date :"
+                                        android:textColor="@color/text_color" />
+
+                                    <TextView
+                                        android:id="@+id/c_bill_date"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left|center"
+                                        android:layout_marginStart="4dp"
+                                        android:layout_marginTop="9dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/worksans_medium"
+                                        android:foregroundGravity="center"
+                                        android:gravity="left|center"
+                                        android:text=""
+                                        android:textColor="@color/text_color" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:background="@color/grey"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left|center"
+                                        android:layout_marginTop="9dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/worksans_medium"
+                                        android:foregroundGravity="center"
+                                        android:gravity="left|center"
+                                        android:paddingLeft="4dp"
+                                        android:text="Due Date :"
+                                        android:textColor="@color/text_color" />
+
+                                    <TextView
+                                        android:id="@+id/c_due_date"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left|center"
+                                        android:layout_marginStart="4dp"
+                                        android:layout_marginTop="9dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/worksans_medium"
+                                        android:foregroundGravity="center"
+                                        android:gravity="left|center"
+                                        android:text=""
+                                        android:textColor="@color/text_color" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:background="@color/grey"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left|center"
+                                        android:layout_marginTop="9dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/worksans_medium"
+                                        android:foregroundGravity="center"
+                                        android:gravity="left|center"
+                                        android:paddingLeft="4dp"
+                                        android:text="Amount :"
+                                        android:textColor="@color/text_color" />
+
+                                    <TextView
+                                        android:id="@+id/c_amount"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left|center"
+                                        android:layout_marginStart="4dp"
+                                        android:layout_marginTop="9dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/worksans_medium"
+                                        android:foregroundGravity="center"
+                                        android:gravity="left|center"
+                                        android:text=""
+                                        android:textColor="@color/text_color" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/c_gray2"
+                            android:layout_marginLeft="35dp"/>
+
+                        <LinearLayout
+                            android:layout_marginTop="2dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:foregroundGravity="center"
+                                android:layout_marginLeft="25dp"
+                                android:src="@drawable/prepaid"
+                                app:tint="@color/c_gray2" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2dp"
+                                    android:hint="Enter Number"
+                                    app:hintTextColor="@color/c_gray2">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/edt_number"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Enter Number"
+                                        android:textSize="@dimen/text"
+                                        android:maxLength="13"
+                                        android:inputType="number"
+                                        android:textColor="@color/c_black"
+                                        android:backgroundTint="@color/c_white"
+                                        android:textColorHint="@color/c_white"/>
+
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:foregroundGravity="center"
+                                android:layout_marginLeft="25dp"
+                                android:src="@drawable/rupee"
+                                app:tint="@color/c_gray2" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2dp"
+                                    android:hint="Enter Amount"
+                                    app:hintTextColor="@color/c_gray2">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/edt_Amount"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Enter Amount"
+                                        android:textSize="@dimen/text"
+                                        android:maxLength="13"
+                                        android:inputType="number"
+                                        android:textColor="@color/c_black"
+                                        android:backgroundTint="@color/c_white"
+                                        android:textColorHint="@color/c_white"/>
+
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <Button
+                            android:id="@+id/btn_process"
+                            android:layout_width="wrap_content"
+                            android:layout_height="39dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:background="@drawable/blue_button_background"
+                            android:fontFamily="@font/baloo"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:text="PROCESS TO PAY"
+                            android:textColor="#ffffffff"
+                            android:layout_gravity="center"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                </ScrollView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

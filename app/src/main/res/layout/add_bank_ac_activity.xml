@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_layout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/scrollView3"
+            app:layout_constraintStart_toStartOf="@+id/scrollView3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ScrollView
+            android:id="@+id/scrollView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="56dp"
+            android:layout_marginBottom="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:context=".Activitys.Personal_detailsActivity">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="25dp"
+                    android:elevation="9dp"
+                    android:paddingBottom="15dp"
+                    app:cardCornerRadius="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="9dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="9dp"
+                        android:paddingRight="9dp"
+                        android:paddingBottom="25dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="9dp"
+                            android:paddingRight="9dp">
+
+                            <ImageView
+                                android:id="@+id/ing_bank"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:layout_gravity="right|center"
+                                android:foregroundGravity="right|center"
+                                android:padding="4dp"
+                                android:src="@drawable/qrcode"
+                                app:layout_constraintBottom_toBottomOf="@+id/linearLayout6"
+                                app:layout_constraintEnd_toEndOf="@+id/linearLayout6"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/linearLayout6" />
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left|center|top"
+                                android:layout_marginStart="57dp"
+                                android:layout_marginEnd="45dp"
+                                android:foregroundGravity="left|center|top"
+                                android:gravity="left|center|top"
+                                android:orientation="vertical"
+                                tools:layout_editor_absoluteX="9dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginTop="9dp"
+                                    android:text="Selected Bank"
+                                    android:textSize="@dimen/text_small"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_gravity="top"
+                                    android:gravity="top"
+                                    android:foregroundGravity="top"/>
+
+                                <TextView
+                                    android:id="@+id/txt_bankname"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:text="SBI Bank"
+                                    android:padding="4dp"
+                                    android:textSize="@dimen/text_title"/>
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/edt_icon"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="right"
+                                android:backgroundTint="@color/black"
+                                android:foregroundGravity="right"
+                                android:padding="4dp"
+                                android:src="@drawable/ic_baseline_edit_24"
+                                android:tint="@color/black"
+                                app:layout_constraintBottom_toBottomOf="@+id/linearLayout6"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="@+id/linearLayout6"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginBottom="15dp"
+                            android:background="@color/black" />
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginRight="12dp"
+                            app:hintTextColor="@color/black"
+                            style="@style/EmailTextInputEditText">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_ac_num"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/gpvch_black"
+                                android:hint="Account Number"
+                                android:inputType="number"
+                                android:textColor="@color/black"
+                                style="@style/EmailTextInputEditText"
+                                android:textColorHint="@color/black"
+                                android:textSize="12dp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="12dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_confirm_ac_num"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/gpvch_black"
+                                android:hint="Confirm Account Number"
+                                android:inputType="number"
+                                style="@style/EmailTextInputEditText"
+                                android:textColor="@color/black"
+                                android:textSize="12dp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="12dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_ifsc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/gpvch_black"
+                                android:hint="IFSC"
+                                android:capitalize="sentences"
+                                android:inputType="textCapCharacters|text"
+                                style="@style/EmailTextInputEditText"
+                                android:textColor="@color/black"
+                                android:textSize="12dp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="12dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_ac_holder_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/gpvch_black"
+                                android:hint="Account Holder Name"
+                                android:inputType="textPersonName"
+                                android:textColor="@color/black"
+                                android:textSize="12dp" />
+a
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="12dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_phone_num"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/EmailTextInputEditText"
+                                android:backgroundTint="@color/gpvch_black"
+                                android:hint="Phone Number (optional)"
+                                android:inputType="number"
+                                android:textColor="@color/black"
+                                android:textSize="12dp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="12dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_nick_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/gpvch_black"
+                                android:hint="Nickname (optional)"
+                                android:inputType="textPersonName"
+                                android:textColor="@color/black"
+                                android:textSize="12dp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/worksans_medium"
+            android:gravity="center"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="Confirm"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

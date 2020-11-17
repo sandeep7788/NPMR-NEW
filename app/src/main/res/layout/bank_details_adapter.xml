@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:elevation="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:background="@drawable/bg_gradient"
+                    android:minHeight="220dp">
+
+                    <TextView
+                        android:id="@+id/txt_bankname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/worksans_medium"
+                        android:foregroundGravity="center|left"
+                        android:gravity="center|left"
+                        android:text="SBI bank"
+                        android:textColor="@color/c_white"
+                        android:textSize="@dimen/text_title"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"/>
+
+                    <LinearLayout
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:layout_marginBottom="25dp">
+
+                        <LinearLayout
+                            android:id="@+id/btn_pay"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.1"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:id="@+id/img_bank"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="4dp"
+                                android:background="@drawable/bg_cercular_shape"
+                                android:backgroundTint="@color/white_color"
+                                android:foregroundGravity="center"
+                                android:padding="4dp"
+                                android:src="@drawable/pay" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:weightSum="2"
+                            android:layout_marginTop="4dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/worksans_medium"
+                                    android:foregroundGravity="center"
+                                    android:text="Holder -"
+                                    android:layout_weight="1.3"
+                                    android:textColor="@color/c_white"
+                                    android:textSize="@dimen/text"/>
+
+                                <TextView
+                                    android:id="@+id/txt_holdername"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/worksans_medium"
+                                    android:foregroundGravity="center"
+                                    android:text="1234123412341234123412341234"
+                                    android:layout_weight="0.7"
+                                    android:textColor="@color/c_white"
+                                    android:textSize="@dimen/text"/>
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/worksans_medium"
+                                    android:foregroundGravity="center"
+                                    android:text="IFSC :"
+                                    android:layout_weight="1.3"
+                                    android:textColor="@color/c_white"
+                                    android:textSize="@dimen/text"/>
+
+                                <TextView
+                                    android:id="@+id/txt_ifsc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/worksans_medium"
+                                    android:foregroundGravity="center"
+                                    android:text="xxxx"
+                                    android:layout_weight="0.7"
+                                    android:textColor="@color/c_white"
+                                    android:textSize="@dimen/text"/>
+                            </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/worksans_medium"
+                                        android:foregroundGravity="center"
+                                        android:text="AC NO :"
+                                        android:layout_weight="1.3"
+                                        android:textColor="@color/c_white"
+                                        android:textSize="@dimen/text"/>
+
+                                    <TextView
+                                        android:id="@+id/txt_Accountnumber"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/worksans_medium"
+                                        android:foregroundGravity="center"
+                                        android:text="xxxx"
+                                        android:layout_weight="0.7"
+                                        android:textColor="@color/c_white"
+                                        android:textSize="@dimen/text"/>
+                                </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:weightSum="2">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/worksans_medium"
+                                            android:foregroundGravity="center"
+                                            android:text="Branch :"
+                                            android:layout_weight="1.3"
+                                            android:textColor="@color/c_white"
+                                            android:textSize="@dimen/text"/>
+
+
+                            <TextView
+                                android:id="@+id/txt_bankbranch"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/worksans_medium"
+                                android:foregroundGravity="center"
+                                android:text="xxxx"
+                                android:layout_weight="0.7"
+                                android:textColor="@color/c_white"
+                                android:textSize="@dimen/text"/>
+
+                                    </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/worksans_medium"
+                                    android:foregroundGravity="center"
+                                    android:text="Type :"
+                                    android:layout_weight="1.3"
+                                    android:textColor="@color/c_white"
+                                    android:textSize="@dimen/text"/>
+
+
+                                <TextView
+                                    android:id="@+id/txtAccountType"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/worksans_medium"
+                                    android:foregroundGravity="center"
+                                    android:text="xxxx"
+                                    android:layout_weight="0.7"
+                                    android:textColor="@color/c_white"
+                                    android:textSize="@dimen/text"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+</layout>

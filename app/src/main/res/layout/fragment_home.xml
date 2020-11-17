@@ -1,0 +1,923 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c_white"
+        android:layout_marginBottom="75dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            android:background="@color/white_color"
+            android:elevation="9dp">
+
+<!--
+            <LinearLayout
+                android:id="@+id/toolbar"
+                android:layout_width="fill_parent"
+                android:layout_height="130dp"
+                android:layout_gravity="top"
+                android:background="@color/c_white"
+                android:elevation="9dp"
+                android:gravity="top"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+
+
+            </LinearLayout>
+-->
+            <LinearLayout
+                android:id="@+id/top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="110dp"
+                        android:layout_height="70dp"
+                        android:foregroundGravity="left"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/whitepmrlogo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <ImageView
+                        android:id="@+id/img_qr"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center|right"
+                        android:layout_marginEnd="8dp"
+                        android:foregroundGravity="center|right"
+                        android:src="@drawable/qrcode"
+                        android:padding="4dp"
+                        android:tint="@color/c_blue_dark"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/img_user"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+                    <ImageView
+                        android:id="@+id/img_user"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center|right"
+                        android:layout_marginEnd="8dp"
+                        android:foregroundGravity="center|right"
+                        android:src="@drawable/icon1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="2dp"
+                        android:text="Wallet Balance"
+                        android:textColor="@color/c_gray2"
+                        android:textSize="@dimen/text"
+                        android:textStyle="bold" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            android:text="$ 500.00"
+                            android:textColor="@color/text_color"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/textView11"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/AddNewMember"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:layout_marginEnd="8dp"
+                            android:gravity="left"
+                            android:text="Add Money >"
+                            android:textColor="@color/c_blue_dark"
+                            android:textSize="@dimen/text"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="130dp"
+            android:scrollbarSize="0.1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginRight="9dp"
+                    android:layout_marginBottom="15dp"
+                    android:elevation="10dp"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:background="@drawable/bg_gradient">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/worksans_medium"
+                            android:foregroundGravity="center|left"
+                            android:gravity="center|left"
+                            android:text="Transfer Money"
+                            android:textColor="@color/c_white"
+                            android:textSize="@dimen/text_title"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:id="@+id/btn_pay"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:background="@drawable/bg_cercular_shape"
+                                    android:backgroundTint="@color/white_color"
+                                    android:foregroundGravity="center"
+                                    android:padding="10dp"
+                                    android:src="@drawable/pay" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/worksans_medium"
+                                    android:foregroundGravity="center"
+                                    android:gravity="center"
+                                    android:text="Pay"
+                                    android:textColor="@color/c_white"
+                                    android:textSize="@dimen/text" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/btn_history"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:background="@drawable/bg_cercular_shape"
+                                    android:backgroundTint="@color/white_color"
+                                    android:foregroundGravity="center"
+                                    android:padding="10dp"
+                                    android:src="@drawable/passbook" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/worksans_medium"
+                                    android:foregroundGravity="center"
+                                    android:gravity="center"
+                                    android:text="Passbook"
+                                    android:textColor="@color/c_white"
+                                    android:textSize="@dimen/text" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:background="@drawable/bg_cercular_shape"
+                                    android:backgroundTint="@color/white_color"
+                                    android:foregroundGravity="center"
+                                    android:padding="10dp"
+                                    android:src="@drawable/request" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/worksans_medium"
+                                    android:foregroundGravity="center"
+                                    android:gravity="center"
+                                    android:text="Request"
+                                    android:textColor="@color/c_white"
+                                    android:textSize="@dimen/text" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9dp">
+
+                            <TextView
+                                android:id="@+id/imageView6"
+                                android:layout_width="60dp"
+                                android:layout_height="17dp"
+                                android:layout_marginStart="45dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_weight="1.1"
+                                android:background="@drawable/blue_button_background"
+                                android:backgroundTint="#D35400"
+                                android:elevation="1dp"
+                                android:text="Check"
+                                android:gravity="center"
+                                android:textColor="@color/c_white"
+                                android:textSize="9dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.120000005" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:paddingTop="12dp"
+                                android:paddingBottom="12dp"
+                                android:weightSum="2"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <LinearLayout
+                                    android:id="@+id/layout_bank_transfer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_weight="1.1"
+                                    android:background="@drawable/border2"
+                                    android:backgroundTint="@color/c_white"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="4dp"
+                                        android:paddingTop="15dp"
+                                        android:paddingRight="4dp"
+                                        android:paddingBottom="15dp"
+                                        android:text="Bank Transfer"
+                                        android:textColor="@color/c_white"
+                                        android:textSize="@dimen/text"
+                                        android:textStyle="bold"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/layout_paytomember"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.9"
+                                    android:background="@drawable/border2"
+                                    android:backgroundTint="@color/c_white"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|left"
+                                        android:foregroundGravity="center|left"
+                                        android:padding="7dp"
+                                        android:src="@drawable/scan" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp"
+                                        android:text="Pay To Merchant"
+                                        android:textColor="@color/c_white"
+                                        android:textSize="@dimen/text" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginRight="9dp"
+                    android:layout_marginBottom="15dp"
+                    android:elevation="10dp"
+                    android:outlineSpotShadowColor="@color/c_black"
+                    android:paddingBottom="15dp"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="4dp"
+                    app:contentPaddingBottom="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="1dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/worksans_medium"
+                            android:foregroundGravity="center|left"
+                            android:gravity="center|left"
+                            android:text="Recharge &amp; Bill Payments"
+                            android:textColor="@color/c_gray1"
+                            android:textSize="@dimen/text_title"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal"
+                            android:weightSum="4">
+
+                            <LinearLayout
+                                android:id="@+id/btn_prepaid"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:background="@drawable/bg_cercular_shape"
+                                    android:backgroundTint="@color/blue_btn_bg_color"
+                                    android:foregroundGravity="center"
+                                    android:padding="9dp"
+                                    android:src="@drawable/prepaid" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/worksans_medium"
+                                    android:foregroundGravity="center"
+                                    android:gravity="center"
+                                    android:text="Prepaid"
+                                    android:textColor="@color/c_gray2"
+                                    android:textSize="@dimen/text" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/btn_postpaid"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:background="@drawable/bg_cercular_shape"
+                                    android:backgroundTint="@color/blue_btn_bg_color"
+                                    android:foregroundGravity="center"
+                                    android:padding="9dp"
+                                    android:src="@drawable/prepaid" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/worksans_medium"
+                                    android:foregroundGravity="center"
+                                    android:gravity="center"
+                                    android:text="Postpaid"
+                                    android:textColor="@color/c_gray2"
+                                    android:textSize="@dimen/text" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/btn_dth"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:background="@drawable/bg_cercular_shape"
+                                    android:backgroundTint="@color/blue_btn_bg_color"
+                                    android:foregroundGravity="center"
+                                    android:padding="9dp"
+                                    android:src="@drawable/dth" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/worksans_medium"
+                                    android:foregroundGravity="center"
+                                    android:gravity="center"
+                                    android:text="DTH"
+                                    android:textColor="@color/c_gray2"
+                                    android:textSize="@dimen/text" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/btn_electric"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:background="@drawable/bg_cercular_shape"
+                                    android:backgroundTint="@color/blue_btn_bg_color"
+                                    android:foregroundGravity="center"
+                                    android:padding="9dp"
+                                    android:src="@drawable/electricity" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/worksans_medium"
+                                    android:foregroundGravity="center"
+                                    android:gravity="center"
+                                    android:text="Electricty"
+                                    android:textColor="@color/c_gray2"
+                                    android:textSize="@dimen/text" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal"
+                            android:weightSum="4">
+
+                            <LinearLayout
+                                android:id="@+id/btn_M_Transfer"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:background="@drawable/bg_cercular_shape"
+                                    android:backgroundTint="@color/blue_btn_bg_color"
+                                    android:foregroundGravity="center"
+                                    android:padding="9dp"
+                                    android:src="@drawable/moneytransfer" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/worksans_medium"
+                                    android:foregroundGravity="center"
+                                    android:gravity="center"
+                                    android:text="M-Transfer"
+                                    android:textColor="@color/c_gray2"
+                                    android:textSize="@dimen/text" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/btn_bus"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:background="@drawable/bg_cercular_shape"
+                                    android:backgroundTint="@color/blue_btn_bg_color"
+                                    android:foregroundGravity="center"
+                                    android:padding="9dp"
+                                    android:src="@drawable/bus" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/worksans_medium"
+                                    android:foregroundGravity="center"
+                                    android:gravity="center"
+                                    android:text="Bus"
+                                    android:textColor="@color/c_gray2"
+                                    android:textSize="@dimen/text" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/btn_flight"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:background="@drawable/bg_cercular_shape"
+                                    android:backgroundTint="@color/blue_btn_bg_color"
+                                    android:foregroundGravity="center"
+                                    android:padding="9dp"
+                                    android:src="@drawable/flight"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/worksans_medium"
+                                    android:foregroundGravity="center"
+                                    android:gravity="center"
+                                    android:text="Flight"
+                                    android:textColor="@color/c_gray2"
+                                    android:textSize="@dimen/text" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/btn_hotel"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:background="@drawable/bg_cercular_shape"
+                                    android:backgroundTint="@color/blue_btn_bg_color"
+                                    android:foregroundGravity="center"
+                                    android:padding="9dp"
+                                    android:src="@drawable/hotel"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/worksans_medium"
+                                    android:foregroundGravity="center"
+                                    android:gravity="center"
+                                    android:text="Hotel"
+                                    android:textColor="@color/c_gray2"
+                                    android:textSize="@dimen/text" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal"
+                            android:weightSum="4"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:id="@+id/btn_ladline"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:background="@drawable/bg_cercular_shape"
+                                    android:backgroundTint="@color/blue_btn_bg_color"
+                                    android:foregroundGravity="center"
+                                    android:padding="9dp"
+                                    android:src="@drawable/landline" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/worksans_medium"
+                                    android:foregroundGravity="center"
+                                    android:gravity="center"
+                                    android:text="LadLine"
+                                    android:textColor="@color/c_gray2"
+                                    android:textSize="@dimen/text" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/btn_gas"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:background="@drawable/bg_cercular_shape"
+                                    android:backgroundTint="@color/blue_btn_bg_color"
+                                    android:foregroundGravity="center"
+                                    android:padding="9dp"
+                                    android:src="@drawable/gas" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/worksans_medium"
+                                    android:foregroundGravity="center"
+                                    android:gravity="center"
+                                    android:text="Gas"
+                                    android:textColor="@color/c_gray2"
+                                    android:textSize="@dimen/text" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/btn_water"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:background="@drawable/bg_cercular_shape"
+                                    android:backgroundTint="@color/blue_btn_bg_color"
+                                    android:foregroundGravity="center"
+                                    android:padding="9dp"
+                                    android:src="@drawable/water" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/worksans_medium"
+                                    android:foregroundGravity="center"
+                                    android:gravity="center"
+                                    android:text="Water"
+                                    android:textColor="@color/c_gray2"
+                                    android:textSize="@dimen/text" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/btn_datacard"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:background="@drawable/bg_cercular_shape"
+                                    android:backgroundTint="@color/blue_btn_bg_color"
+                                    android:foregroundGravity="center"
+                                    android:padding="9dp"
+                                    android:src="@drawable/pancard"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/worksans_medium"
+                                    android:foregroundGravity="center"
+                                    android:gravity="center"
+                                    android:text="Data Card"
+                                    android:textColor="@color/c_gray2"
+                                    android:textSize="@dimen/text" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

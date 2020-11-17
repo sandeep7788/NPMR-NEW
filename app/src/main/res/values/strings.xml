@@ -1,0 +1,63 @@
+<resources>
+
+    <string name="LOADING">Loading...</string>
+    <string name="address">Address</string>
+    <string name="amount">Amount</string>
+    <string name="app_name">PayMy-Recharge</string>
+    <string name="bankDetails">Bank Details</string>
+    <string name="change_password">Change Password</string>~
+    <string name="character_counter_pattern">%1$d / %2$d</string>
+    <string name="checkInternetMessage">Please check your network connection</string>
+    <string name="closeDrawer">Navigation View</string>
+    <string name="create_new_retailer">Create User</string>
+    <string name="customer_id">Customer Id</string>
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_default_title">"Here's a message!"</string>
+    <string name="dialog_ok">OK</string>
+    <string name="district">District</string>
+    <string name="drawer_closed">Drawer Closed</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="email_id">Email Id</string>
+    <string name="error_view_oops">Oops</string>
+    <string name="error_view_retry">RETRY</string>
+    <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
+    <string name="firm_name">Firm Name</string>
+    <string name="footerlabel">Copyright © Safal Recharge</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="fund_received">Fund Received</string>
+    <string name="fund_trans_report">Transfer Report</string>
+    <string name="fund_transfer">Fund Transfer</string>
+    <string name="google_maps_key">AIzaSyDWY50bdW6XWERTIvW20H8gFtflYnCi44c</string>
+    <string name="gpvch_button_negative">Remind me later</string>
+    <string name="gpvch_button_positive">Update current version</string>
+    <string name="gpvch_google_play_url">https://play.google.com/store/apps/details?id=</string>
+    <string name="gpvch_header">New version is available!</string>
+    <string name="gpvch_new_version_info_title">Whats new:</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="logout">Logout</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="new_password">New Password</string>
+    <string name="new_user">New user? Register now!</string>
+    <string name="old_password">Old Password</string>
+    <string name="openDrawer">Navigation View Closed</string>
+    <string name="operator">Operator</string>
+    <string name="password">Password</string>
+    <string name="pin_code">Pin Code</string>
+    <string name="profile">My Profile</string>
+    <string name="refund_request">Refund Request</string>
+    <string name="remain_amout">Remain Amount</string>
+    <string name="remember_me">Remember me</string>
+    <string name="retailer_list">Retailer List</string>
+    <string name="retailer_name">Retailer Name</string>
+    <string name="sign_in">Login</string>
+    <string name="state">State</string>
+    <string name="username">Username</string>
+    <string name="title_activity_bottom_navigation_drawer">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Wallet</string>
+    <string name="title_notifications">Profile</string>
+    <string name="withrowpage">To withdrawal fund into bank </string>
+
+</resources>

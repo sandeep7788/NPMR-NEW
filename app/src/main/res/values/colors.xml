@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background">#ff00b0b0</color>
+    <color name="blue_btn_bg_color">#D6EAF8</color>
+    <color name="blue_btn_bg_pressed_color">#ff96bfd2</color>
+    <color name="buttonColor">#ff0e5a75</color>
+    <color name="button_material_dark">#ff5a595b</color>
+    <color name="button_material_light">#ffd6d7d7</color>
+    <color name="button_text_color">#ffffffff</color>
+    <color name="cardview_dark_background">#ff424242</color>
+    <color name="cardview_light_background">#ffffffff</color>
+    <color name="cardview_shadow_end_color">#03000000</color>
+    <color name="cardview_shadow_start_color">#37000000</color>
+    <color name="colorAccent">#1418b0</color>
+    <color name="colorPrimary">#393186</color>
+    <color name="colorPrimaryDark">#393186</color>
+    <color name="view_color">#134584</color>
+    <color name="white_color">#f0f1f4</color>
+    <color name="color_accent">#ff7c4dff</color>
+    <color name="color_error">#fff44336</color>
+    <color name="color_success">#ff3ccd88</color>
+    <color name="error_color_material">#fff4511e</color>
+    <color name="error_stroke_color">#fff27474</color>
+    <color name="error_view_retry_button_background">#30000000</color>
+    <color name="error_view_retry_button_background_stroke">#50000000</color>
+    <color name="error_view_text">#ff656565</color>
+    <color name="error_view_text_dark">#cc000000</color>
+    <color name="error_view_text_light">#ff858585</color>
+    <color name="float_transparent">#00000000</color>
+    <color name="gray_btn_bg_color">#ffd0d0d0</color>
+    <color name="gray_btn_bg_pressed_color">#ffb6b6b6</color>
+    <color name="grey">#ffe8e8e8</color>
+    <color name="list_background">#ff303030</color>
+    <color name="list_background_pressed">#ff992416</color>
+    <color name="list_divider">#ff272727</color>
+    <color name="list_item_title">#ffffffff</color>
+    <color name="notification_icon_bg_color">#ff9e9e9e</color>
+    <color name="red_btn_bg_color">#ffdd6b55</color>
+    <color name="red_btn_bg_pressed_color">#ffcd5b55</color>
+    <color name="ripple_material_dark">#33ffffff</color>
+    <color name="ripple_material_light">#1f000000</color>
+
+    <color name="selection">#ffff9800</color>
+    <color name="success_stroke_color">#ffa5dc86</color>
+    <color name="sweet_dialog_bg_color">#ffffffff</color>
+
+    <color name="text_color">#ff575757</color>
+    <color name="tooltip_background_dark">#e6616161</color>
+    <color name="tooltip_background_light">#e6ffffff</color>
+    <color name="gpvch_black">#212642</color>
+    <color name="black">#000000</color>
+
+    <color name="c_white">#e9f1fb</color>
+    <color name="blue_dark">#132752</color>
+    <color name="blue_light">#1b4c99</color>
+
+    <color name="c_black">#000000</color>
+    <color name="c_gray1">#969696</color>
+    <color name="c_blue_dark">#132752</color>
+    <color name="c_gray2">#999999</color>
+    <color name="c_green">#0b892e</color>
+    <color name="c_red">#ed1b24</color>
+    <color name="c_blue">#1b4b97</color>
+</resources>

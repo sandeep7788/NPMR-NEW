@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:fillViewport="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+<androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/r_prepaid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_weight="1.0"
+                    android:checked="true"
+                    android:text="Prepaid" />
+
+                <RadioButton
+                    android:id="@+id/r_postpaid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="Postpaid" />
+            </RadioGroup>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_shadow"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+
+                <EditText
+                    android:id="@+id/edtMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginRight="32dp"
+                    android:backgroundTint="#EBEDEF"
+                    android:drawableLeft="@drawable/prepaid"
+                    android:drawablePadding="5.0dip"
+                    android:drawableTint="@color/colorPrimary"
+                    android:ellipsize="end"
+                    android:hint="Enter No."
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textColor="#ff000000"
+                    android:textColorHint="#566573"
+                    android:textSize="15.0sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivPhoneBook"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="0.1"
+                    android:foregroundGravity="center"
+                    android:src="@drawable/ic_baseline_contact_phone_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/edtMobile"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--
+                <TextView
+                    android:id="@+id/tt1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40.0dip"
+                    android:text="Operator"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="4dp"/>
+            -->
+
+            <LinearLayout
+                android:id="@+id/view_op"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/background_shadow"
+                android:backgroundTint="#EBEDEF"
+                android:clickable="true"
+                android:drawableTint="@color/colorPrimary"
+                android:orientation="horizontal"
+                android:paddingTop="9dp"
+                android:paddingBottom="15dp"
+                android:weightSum="1.0">
+
+                <ImageView
+                    android:id="@+id/operatorimg"
+                    android:layout_width="0.0dip"
+                    android:layout_height="30.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/ic_baseline_contact_phone_24"
+                    android:backgroundTint="#a02E86C1"
+                    android:paddingBottom="2.0dip" />
+
+                <TextView
+                    android:id="@+id/operator"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="9dp"
+                    android:layout_weight="0.9"
+                    android:foregroundGravity="center"
+                    android:hint="Select Operator"
+                    android:inputType="number"
+                    android:paddingLeft="8.0dip"
+                    android:paddingTop="10dp"
+                    android:textColor="#ff000000"
+                    android:textColorHint="#566573" />
+            </LinearLayout>
+
+            <!--
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_margin="3.0dip"
+                    android:background="#ffbdbdbd" />
+            -->
+
+            <RadioGroup
+                android:id="@+id/rgOperatorCodes"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="1.0">
+
+                <RadioButton
+                    android:id="@+id/rbOperatorOne"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="BT" />
+
+                <RadioButton
+                    android:id="@+id/rbOperatorTwo"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="BT" />
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/edtAmount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/background_shadow"
+                    android:backgroundTint="#EBEDEF"
+                    android:drawableLeft="@drawable/rs"
+                    android:drawablePadding="10.0dip"
+                    android:drawableTint="@color/colorPrimary"
+                    android:hint="Amount"
+                    android:inputType="number"
+                    android:textColor="#ff000000"
+                    android:textColorHint="#566573"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/txt_showPlan_dth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/c_blue"
+                    android:padding="5dp"
+                    android:text="VIEW PLAN"
+                    android:textColor="#ff3bbdfa"
+                    android:textSize="15.0sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btnRecharge"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="19dp"
+                android:layout_marginRight="5.0dip"
+                android:layout_toLeftOf="@+id/btn_back"
+                android:background="@drawable/background_shadow"
+                android:backgroundTint="@color/colorPrimary"
+                android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+                android:drawableTint="@color/white_color"
+                android:fontFamily="@font/worksans_medium"
+                android:foregroundGravity="center"
+                android:gravity="left|center"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="Recharge"
+                android:textColor="@color/white_color" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+                    <FrameLayout
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/f1"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="9dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+                        android:layout_below="@+id/cardView2"
+                        app:layout_constraintVertical_bias="1.0"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginLeft="4dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <group android:checkableBehavior="single">
+    <item
+        android:id="@id/home"
+        android:checked="false"
+        android:icon="@drawable/prepaid"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/fund_received"
+        android:checked="false"
+        android:icon="@drawable/prepaid"
+        android:title="@string/fund_received" />
+    <item
+        android:id="@+id/remain_amout"
+        android:checked="false"
+        android:icon="@drawable/prepaid"
+        android:title="@string/remain_amout" />
+    <item
+        android:id="@+id/change_pass"
+        android:checked="false"
+        android:icon="@drawable/ic_change_pass"
+        android:title="@string/change_password" />
+    <item
+        android:id="@+id/logout"
+        android:checked="false"
+        android:icon="@drawable/prepaid"
+        android:title="@string/logout" />
+  </group>
+</menu>

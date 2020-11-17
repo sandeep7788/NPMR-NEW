@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffffff"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dip">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/member_auto"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:padding="4.0dip" />
+
+                <Spinner
+                    android:id="@+id/sp_status"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:padding="4.0dip"
+                    android:spinnerMode="dialog" />
+
+                <Spinner
+                    android:id="@+id/sp_operator"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:padding="4.0dip"
+                    android:spinnerMode="dialog" />
+
+                <Spinner
+                    android:id="@+id/sp_days"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:padding="4.0dip"
+                    android:spinnerMode="dialog" />
+            </TableRow>
+        </TableLayout>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="1.0dip"
+                android:layout_marginBottom="1.0dip"
+                android:layout_weight="0.25"
+                android:text="REQ. ID"
+                android:textColor="#ffffffff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip"
+                android:layout_marginBottom="1.0dip"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:text="CUST NO."
+                android:textColor="#ffffffff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip"
+                android:layout_marginBottom="1.0dip"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:paddingLeft="8.0dip"
+                android:text="AMT"
+                android:textColor="#ffffffff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip"
+                android:layout_marginBottom="1.0dip"
+                android:layout_weight="0.3"
+                android:gravity="left"
+                android:paddingLeft="10.0dip"
+                android:text="STATUS"
+                android:textColor="#ffffffff"
+                android:textStyle="bold" />
+        </TableRow>
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_dealer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ExpandableListView
+                android:id="@+id/listviewnew"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:childDivider="#ffffffff"
+                android:divider="#ffffffff"
+                android:dividerHeight="1.0dip"
+                android:groupIndicator="@android:color/transparent"
+                android:padding="5dp"
+                android:scrollbars="none" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</layout>

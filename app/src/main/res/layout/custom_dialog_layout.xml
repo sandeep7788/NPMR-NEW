@@ -1,0 +1,95 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/alertdialog_linearlayout"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="56dp"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/border2"
+            android:drawableLeft="@color/design_default_color_secondary_variant"
+            android:paddingStart="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:maxLines="1"
+            android:textCursorDrawable="@null"
+            android:gravity="start"
+            android:inputType="text"
+            android:layout_gravity="start"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_search_24"
+                android:padding="4dp"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                app:tint="@color/c_blue"
+                android:tint="@color/c_blue"/>
+
+            <EditText
+                android:id="@+id/alertdialog_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:textStyle="normal"
+                android:inputType="text"
+                android:textColorHint="#939598"
+                android:textColor="#4b4f54"
+                android:hint="Search...."
+                android:backgroundTint="#ffffff"
+                android:fontFamily="@font/worksans_medium"
+                android:layout_gravity="center"
+                android:gravity="center|left"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/alertdialog_Listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:choiceMode="singleChoice"
+            android:scrollbarSize="0.1dp"/>
+
+    </LinearLayout>
+
+    <!--
+        <Button
+            android:id="@+id/dialog_cancel_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="X"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/c_red"/>
+    -->
+
+    <include layout="@layout/toolbar_layout"/>
+</RelativeLayout>

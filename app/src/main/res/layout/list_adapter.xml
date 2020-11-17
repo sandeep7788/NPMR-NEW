@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:elevation="4dp"
+        android:layout_marginTop="7dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="2dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="8dp"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:foregroundTint="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="@+id/item_layout"
+                app:layout_constraintEnd_toEndOf="@+id/amount1"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/item_layout"
+                app:layout_constraintTop_toTopOf="@+id/item_layout" />
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="4dp"
+                android:src="@drawable/whitepmrlogo"
+                app:layout_constraintBottom_toBottomOf="@+id/item_layout"
+                app:layout_constraintEnd_toStartOf="@+id/amount1"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/item_layout"
+                app:layout_constraintTop_toTopOf="@+id/item_layout"
+                app:tint="@color/colorPrimary" />
+
+
+            <TextView
+                android:id="@+id/amount1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/item_layout"
+                android:layout_alignBottom="@+id/item_layout"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="#ffffff"
+                android:foregroundGravity="center"
+                android:gravity="end|center_vertical"
+                android:padding="16dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/item_layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/item_layout"
+                app:layout_constraintTop_toTopOf="@+id/item_layout" />
+
+            <LinearLayout
+                android:id="@id/item_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:minHeight="80dp">
+
+                <ImageView
+                    android:id="@+id/i_image"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginStart="9dp"
+                    android:src="@drawable/prepaid"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginLeft="9dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:minHeight="200dp">
+
+
+                    <TextView
+                        android:id="@+id/t_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="123456789"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_marginTop="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:gravity="bottom"
+                            android:text="Date: "
+                            android:textColor="#000" />
+
+                        <TextView
+                            android:id="@+id/t_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:gravity="bottom"
+                            android:text="Re No. 123456789"
+                            android:textColor="@color/red_btn_bg_pressed_color" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="4dp"
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:foregroundGravity="left">
+
+<!--
+                        <TextView
+                            android:layout_gravity="left"
+                            android:foregroundGravity="left"
+                            android:id="@+id/status1"
+                            android:layout_width="0.0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.45"
+                            android:gravity="center_vertical"
+                            android:text="status"
+                            android:textColor="#ff000000"
+                            android:visibility="visible" />
+-->
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

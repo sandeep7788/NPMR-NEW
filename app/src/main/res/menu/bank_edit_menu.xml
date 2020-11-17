@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_history"
+        android:icon="@drawable/ic_baseline_history_24"
+        android:title="View History"
+        android:checked="true"
+        android:iconTint="@color/c_blue_dark"/>
+    <item
+        android:id="@+id/menu_edit"
+        android:icon="@drawable/ic_baseline_edit_24"
+        android:title="Edit"
+        android:iconTint="@color/c_blue_dark"/>
+    <item
+        android:id="@+id/menu_remove"
+        android:icon="@drawable/ic_baseline_restore_from_trash_24"
+        android:title="Remove"
+        android:iconTint="@color/c_blue_dark"/>
+</menu>

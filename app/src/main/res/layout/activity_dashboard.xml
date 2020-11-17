@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <FrameLayout
+                android:id="@+id/frame"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/tvvNews"/>
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/navigation"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="bottom"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:background="@color/c_blue"
+                android:elevation="4dp"
+                app:itemIconSize="45dp"
+                android:theme="@style/MyTabLayout"
+                app:itemIconTint="@color/white_color"
+                app:itemTextAppearanceActive="@style/MyTabLayout"
+                app:itemTextColor="@color/white_color"
+                app:labelVisibilityMode="labeled"
+                android:foreground="?attr/selectableItemBackground"
+                android:scrollIndicators="bottom"
+                app:menu="@menu/navigation"/>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+        
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

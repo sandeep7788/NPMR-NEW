@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:elevation="4dp"
+        android:layout_margin="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp">
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@id/item_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:minHeight="80dp"
+                android:foregroundGravity="center">
+
+                <ImageView
+                    android:id="@+id/i_image"
+                    android:layout_width="100dp"
+                    android:layout_height="85dp"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/qrcode"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:foregroundGravity="center"
+                    android:layout_marginBottom="10dp">
+
+
+                    <TextView
+                        android:id="@+id/t_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="123456789"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/text"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:fontFamily="@font/worksans_medium"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:foregroundGravity="center"/>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

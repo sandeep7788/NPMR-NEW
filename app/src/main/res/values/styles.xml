@@ -1,0 +1,109 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#132752</item>
+        <item name="colorAccent">@color/c_gray1</item>
+    </style>
+
+    <style name="checkBoxStyle" parent="@style/Base.Theme.AppCompat">
+        <item name="colorAccent">#ffffffff</item>
+    </style>
+    <style name="checkBoxStyle1" parent="@style/Base.Theme.AppCompat">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="Theme.App.Base" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">20.0sp</item>
+        <item name="colorControlNormal">#ffc5c5c5</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">#ff000000</item>
+    </style>]
+    <style name="myFullscreenAlertDialogStyle" parent="Theme.AppCompat.Light.NoActionBar">      //no actionbar, but status bar exists
+        <item name="android:windowFullscreen">true</item>                       //remove status bar
+        <item name="colorAccent">@color/colorAccent</item>                      //change button text color
+    </style>
+    <style name="Theme.App.Base1" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">20.0sp</item>
+        <item name="colorControlNormal">#ffc5c5c5</item>
+        <item name="colorControlActivated">#ffffffff</item>
+        <item name="colorControlHighlight">#ffffffff</item>
+    </style>
+    <style name="Theme.App.Base2" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">20.0sp</item>
+        <item name="colorControlNormal">#ffc5c5c5</item>
+        <item name="colorControlActivated">#ff673ab7</item>
+        <item name="colorControlHighlight">#ffffffff</item>
+    </style>
+    <style name="Theme.App.Base4" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">20.0sp</item>
+        <item name="colorControlNormal">#ffc5c5c5</item>
+        <item name="colorControlActivated">#ff000000</item>
+        <item name="colorControlHighlight">#ff000000</item>
+    </style>
+
+    <style name="MyTabLayout" parent="Base.Widget.Design.TabLayout">
+        <item name="tabPadding">@style/MyTabTextAppearance</item>
+    </style>
+    <style name="MyNavigationViewItemStyle" parent="AppTheme">
+        <item name="listPreferredItemPaddingLeft">50dp</item>
+        <item name="listPreferredItemPaddingStart">50dp</item>
+
+    </style>
+
+    <style name="MyTabTextAppearance" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">@dimen/design_bottom_navigation_text_size</item>
+        <item name="autoSizeMaxTextSize">@dimen/design_bottom_navigation_text_size</item>
+        <item name="android:textColor">#000</item>
+        <item name="maxImageSize">15dp</item>
+        <item name="textAllCaps">true</item>
+        <item name="tabPadding">15dp</item>
+        <item name="listPreferredItemPaddingLeft">4dp</item>
+        <item name="paddingTopNoTitle">25dp</item>
+        <item name="contentPaddingTop">25dp</item>
+        <item name="iconPadding">50dp</item>
+    </style>
+    <string-array name="type">
+        <item>Select</item>
+        <item>Debit</item>
+        <item>Cradit</item>
+    </string-array>
+    <string name="selected_type">"Please Select"</string>
+    <style name="NavigationTextSize">
+
+        <item name="android:textSize">11sp</item>
+
+        <item name="android:typeface">sans</item>
+
+    </style>
+    <style name="DialogFragmentTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="FullWidth.Dialog" parent="Theme.AppCompat.DayNight.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--<item name="android:windowAnimationStyle">@style/DialogAnimation</item>-->
+    </style>
+
+    <style name="EmailTextInputEditText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/c_gray1</item>
+        <item name="colorControlNormal">#a90000</item>
+        <item name="android:textCheckMark">@color/black</item>
+        <item name="android:inputType">number</item>
+    </style>
+
+</resources>
